@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title> Laboratorio: formulario</title>
+        <link rel="stylesheet" href="style.css"/>
+        <script src="images/error-icon.svg"></script>
+        <script src="images/success-icon.svg"></script>
+    </head>
+    <body>
+        <div class="formulario">
+          <form action="" class="formulario" id="formulario">
+            <h1 class="formulario__titulo">Create Account</h1>
+        <!---- Poner las alertas en cada campo¿?--->
+            <div class="campo nombre" id="grupo__nombre">
+                <label for="nombre">Nombre</label>
+                <i class="error-icon"></i>
+                <input type="text" id="nombre" name="nombre" value="" title="El nombre solo puede contener letras"/>
+                <p class="MensajeError"></p>
+            </div>
+            <div class="campo email" id="grupo__email">
+                <label for="email">Email</label>
+                <i class="error-icon"></i>
+                <input type="email" id="email" name="email" value=""/>
+                <p class="MensajeError"></p>
+            </div>
+            <div class="campo clave" id="grupo__clave">
+                <label for="clave">Clave</label>
+                <i class="error-icon"></i>
+                <input type="password" id="clave" name="clave" title="La contraseña debe contener al menos 8 caracteres y 15 como máximo"/>
+                <p class="MensajeError"></p>
+            </div>
+            <div class="campo confirmacion" id="grupo__confirmacion">
+                <label for="confirmacion">Confirme su clave</label>
+                <i class="error-icon"></i>
+                <input type="password" id="confirmacion" name="confirmacion"/>
+                <p class="MensajeError"></p>
+            </div>
+                <button type="submit" value="enviar">Enviar</button>
+                <br>
+          </form>
+        </div> 
+    <script src="index.js"></script>
+    </body>
+</html>
